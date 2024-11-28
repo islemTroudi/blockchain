@@ -1,0 +1,162 @@
+/* Styles Globaux */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #111; /* Fond noir */
+    color: #f5c542; /* Texte doré */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    overflow-y: auto; /* Permet le défilement vertical */
+  }
+  
+  /* Conteneur principal */
+  .container {
+    background-color: #1f1f1f; /* Fond sombre pour le formulaire */
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
+    text-align: center;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 80px; /* Espace sous le logo */
+  }
+  
+  /* Conteneur pour le logo */
+  .logo-container {
+    position: absolute; /* Position fixe pour le logo */
+    top: 10px; /* Décalage depuis le haut */
+    left: 10px; /* Décalage depuis la gauche */
+    text-align: left; /* Alignement du contenu */
+  }
+  
+  .logo-container img {
+    width: 120px; /* Taille du logo */
+    height: auto;
+    margin-bottom: 20px; /* Espace sous le logo */
+  }
+  
+  /* Titre principal */
+  h1 {
+    font-size: 32px;
+    margin: 20px 0;
+    color: #f5c542;
+  }
+  
+  /* Formulaire de saisie */
+  form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  label {
+    font-size: 16px;
+    margin-bottom: 10px;
+    text-align: left;
+    color: #fff;
+  }
+  
+  input, select {
+    padding: 12px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    border: 1px solid #f5c542; /* Bordure dorée */
+    background-color: #333;
+    color: #f5c542;
+    font-size: 16px;
+  }
+  
+  input:focus, select:focus {
+    outline: none;
+    border: 1px solid #f5c542;
+    background-color: #444;
+  }
+  
+  button {
+    background: linear-gradient(145deg, #f5c542, #d4b300); /* Dégradé doré */
+    border: none;
+    border-radius: 8px;
+    color: white;
+    padding: 12px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+  }
+  
+  button:hover {
+    background: linear-gradient(145deg, #d4b300, #f5c542);
+    transform: translateY(-2px);
+  }
+  
+  button:disabled {
+    background: #aaa;
+    cursor: not-allowed;
+  }
+  
+  footer {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #fff;
+  }
+  
+  /* Container des acteurs */
+  .actor-container {
+    display: flex;
+    justify-content: space-evenly; /* Espacement égal entre les images */
+    gap: 20px; /* Espace entre les éléments */
+    margin-bottom: 30px; /* Espace en bas */
+  }
+  
+  /* Redimensionnement des images des acteurs */
+  .actor-image {
+    width: 4cm; /* Largeur de 4 cm */
+    height: 4cm; /* Hauteur de 4 cm */
+    object-fit: cover; /* Permet de conserver les proportions tout en remplissant l'espace */
+    border-radius: 50%; /* Optionnel : pour arrondir les bords de l'image */
+    margin-bottom: 10px; /* Espace entre l'image et le texte */
+  }
+  
+  /* Ajustement des autres éléments */
+  .actor h2 {
+    font-size: 16px;
+    color: #fff;
+  }
+  
+  .actor input {
+    margin-top: 10px;
+  }
+  
+  /* Amélioration de l'apparence sur des écrans larges */
+  @media (min-width: 768px) {
+    .container {
+      width: 500px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    body {
+      padding: 10px;
+    }
+  
+    .container {
+      width: 100%;
+      padding: 20px;
+    }
+  
+    h1 {
+      font-size: 28px;
+    }
+  
+    button {
+      font-size: 16px;
+      padding: 10px;
+    }
+  }
+  
